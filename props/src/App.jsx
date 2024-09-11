@@ -34,7 +34,10 @@ function App() {
     console.log(users)
   return (
    
-      <User meet={users} color={colors} />
+      <User 
+      meet={users} 
+      color={colors} 
+      />
    
   );
 }
