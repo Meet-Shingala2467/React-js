@@ -54,6 +54,7 @@ class Demo extends Component {
                 <td>{record.country}</td>
                 <td>{record.occupation}</td>
                 <td>{record.hobbies.join(", ")}</td>
+                {Data.meet((data)=>data.id )}
               </tr>
             ))}
           </tbody>
