@@ -30,7 +30,7 @@ class Person extends Component {
               <th
                 style={{
                   border: "1px solid black",
-                  backgroundColor: "lightgray",
+                  backgroundColor: "#FFF4A3",
                 }}
               >
                 Grid
@@ -38,7 +38,7 @@ class Person extends Component {
               <th
                 style={{
                   border: "1px solid black",
-                  backgroundColor: "lightgray",
+                  backgroundColor: "#FFF4A3",
                 }}
               >
                 Name
@@ -46,7 +46,7 @@ class Person extends Component {
               <th
                 style={{
                   border: "1px solid black",
-                  backgroundColor: "lightgray",
+                  backgroundColor: "#FFF4A3",
                 }}
               >
                 Email
@@ -54,7 +54,7 @@ class Person extends Component {
               <th
                 style={{
                   border: "1px solid black",
-                  backgroundColor: "lightgray",
+                  backgroundColor: "#FFF4A3",
                 }}
               >
                 Password
@@ -62,7 +62,7 @@ class Person extends Component {
               <th
                 style={{
                   border: "1px solid black",
-                  backgroundColor: "lightgray",
+                  backgroundColor: "#FFF4A3",
                 }}
               >
                 Courses
@@ -70,7 +70,7 @@ class Person extends Component {
               <th
                 style={{
                   border: "1px solid black",
-                  backgroundColor: "lightgray",
+                  backgroundColor: "#FFF4A3",
                 }}
               >
                 City
