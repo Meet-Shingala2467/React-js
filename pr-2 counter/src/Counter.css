@@ -1,0 +1,118 @@
+body {
+  background-color: #2f343a;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-image: linear-gradient(to bottom, #2f343a, #3b4148);
+}
+
+div {
+  background-color: #3b4148;
+  padding: 25px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #4CAF50;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #4CAF50, #66d37e);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  transform: translateY(-5px);
+  background-image: linear-gradient(to right, #66d37e, #4CAF50);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-image: linear-gradient(to right, #a9d8b7, #b3e0b1);
+}
+
+button.increment {
+  background-image: url('https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/271/arrow-up.png');
+  background-size: 20px;
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+}
+
+button.decrement {
+  background-image: url('https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/271/arrow-down.png');
+  background-size: 20px;
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+}
+
+button.reset {
+  background-image: url('https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/271/repeat.png');
+  background-size: 20px;
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+}
+
+span {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0 25px;
+  transition: transform 0.2s ease;
+  color: #4CAF50;
+  animation: fadeIn 0.5s ease;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate-up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animate-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
