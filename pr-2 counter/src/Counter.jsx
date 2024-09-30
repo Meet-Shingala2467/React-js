@@ -1,17 +1,19 @@
-import React, { useState } from 'react';
-import './Counter.css'; 
+import React, { useState } from "react";
+import "./Counter.css";
 
 function Counter() {
   const [count, setCount] = useState(0);
-  const [color, setColor] = useState('initial');
+  const [color, setColor] = useState("initial");
 
   const generateRandomColor = () => {
-    const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+    const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
+      Math.random() * 256
+    )}, ${Math.floor(Math.random() * 256)})`;
     setColor(randomColor);
   };
 
   const increment = () => {
-    setCount(count + 1);  
+    setCount(count + 1);
     generateRandomColor();
   };
 
@@ -24,7 +26,7 @@ function Counter() {
 
   const reset = () => {
     setCount(0);
-    setColor('initial');
+    setColor("initial");
   };
 
   return (
