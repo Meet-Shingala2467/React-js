@@ -1,0 +1,93 @@
+* {
+    outline: none;
+}
+
+:root {
+    --color: #64b496;
+    --poppins: "Poppins", sans-serif;
+    --manerope: "Manrope", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.banner {
+    background-image: url('img/banner-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner .bannre-page h5 span {
+    color: var(--color);
+    font-family: var(--poppins);
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.banner .bannre-page h5 {
+    font-family: var(--poppins);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.banner .bannre-page h1 {
+    font-size: 48px;
+    font-family: var(--manerope);
+    font-weight: 900;
+}
+
+.banner .bannre-page p {
+    font-size: 18px;
+    font-family: var(--poppins);
+    color: #7A7A7A;
+    line-height: 1.75;
+}
+
+.banner .bannre-page .btn {
+    background-color: var(--color);
+}
+
+.banner .bannre-page .btn a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.banner .bannre-page .btn:hover {
+    background-color: #000;
+}
+
+.banner .bannre-page {
+    padding: 100px 0 100px 0;
+}
+
+@media (max-width: 576px) {
+    .banner .bannre-page h1{
+      font-size: 24px;
+    }
+    .banner .bannre-page p {
+        font-size: 15px;
+    }
+    .banner .bannre-page h5{
+        font-size: 14px;
+    }
+    .banner .bannre-page h5 span{
+        font-size: 16px;
+    }
+    .banner .bannre-page .btn a {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,133 @@
+* {
+    outline: none;
+}
+
+:root {
+    --color: #64b496;
+    --poppins: "Poppins", sans-serif;
+    --manerope: "Manrope", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.cards {
+    padding: 70px 0;
+}
+
+.cards .img {
+    overflow: hidden;
+}
+
+.cards .image-card {
+    width: 100%;
+    padding: 24px;
+}
+
+.cards .card1 {
+    background-image: url('img/2 (2).jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.cards .card2 {
+    background-image: url('img/112.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.cards .card3 {
+    background-image: url('img/3 (2).jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.cards .image-card h3 {
+    font-family: var(--manerope);
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #2b2b2b;
+}
+
+.cards .image-card p,
+.card .image-card span {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #777;
+    padding-bottom: 15px;
+    font-family: var(--poppins);
+}
+
+.cards .image-card .percentage {
+    margin-right: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color);
+}
+
+.cards .image-card .shop {
+    display: flex;
+}
+
+.cards .image-card .shop button {
+    padding: 8px 22px;
+    background-color: var(--color);
+    transition: all 1s;
+}
+
+.cards .image-card .shop button:hover {
+    background-color: black;
+}
+
+.cards .image-card .shop button a {
+    font-size: 14px;
+    font-family: var(--manerope);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (max-width:576px) {
+    .cards {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width:768px) {
+    .cards {
+        padding: 50px 0;
+    }
+    .cards .image-card .shop button {
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width:992px) {
+    .cards {
+        padding: 50px 0;
+    }
+    .cards .image-card .shop button {
+        padding: 8px 10px;
+    }
+}

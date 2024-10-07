@@ -1,0 +1,37 @@
+body {
+  background-color: #f0f0f0; /* Changed background color */
+  /* Removed background image */
+  background-size: contain; /* Set background image to cover */
+}
+
+.card {
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 45px;
+  padding-bottom: 15px;
+  font-family: cursive;
+  color: #333;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #007bff; /* Added button background color */
+  border: none; /* Removed button border */
+  transition: background-color 0.3s ease; /* Added transition for background color */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Changed button background color on hover */
+}

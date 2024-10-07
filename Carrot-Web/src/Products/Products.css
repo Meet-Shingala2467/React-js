@@ -1,0 +1,154 @@
+* {
+    outline: none;
+}
+
+:root {
+    --color: #64b496;
+    --poppins: "Poppins", sans-serif;
+    --manerope: "Manrope", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0;
+}
+
+.product .title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2b2b2d;
+    font-family: var(--manerope);
+}
+
+.product .title p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 17px;
+    color: #979393;
+    text-align: center;
+}
+
+.product .box-1 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+}
+
+.product .img-box {
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.product .img-box img {
+    transition: transform 1s;
+}
+
+.product .img-box img:hover {
+    transform: scale(1.3);
+}
+
+.product .text-box {
+    text-align: center;
+}
+
+.product .text-box span {
+    font-size: 13px;
+    color: #000;
+    font-family: var(--poppins);
+}
+
+.product .text-box h3 {
+    font-size: 18px;
+    font-family: var(--poppins);
+    margin: 10px 0;
+    color: #000000;
+    transition: all 0.7s;
+}
+
+.product .text-box p {
+    font-size: 18px;
+    font-family: var(--poppins);
+    margin: 0;
+    font-weight: 800;
+    color: var(--color);
+}
+
+.product .text-box p span {
+    text-decoration: line-through;
+    color: #999;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.product .text-box i {
+    padding-top: 10px;
+    color: #f5885f;
+    font-size: 15px;
+}
+
+.product .text-box a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.product .text-box a h3:hover {
+    color: var(--color);
+}
+
+.product .icon1 a i {
+    background-color: #fff;
+}
+
+.product .icon1 a p i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d0d0d3;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+    color: #000000;
+    visibility: hidden;
+}
+
+.product .icon1 a i {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d0d0d3;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+    color: #000000;
+    visibility: hidden;
+}
+
+.product .box-1:hover i {
+    visibility: visible;
+}
