@@ -1,11 +1,23 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  --font-weight: 400;
 
+  --text-color-dark: rgba(255, 255, 255, 0.87);
+  --text-color-light: #333;
+  --background-color-dark: #1e1e2f; /* Darker shade for depth */
+  --background-color-light: #f9f9f9; /* Light and clean */
+  --link-color: #007bff; /* Brighter link color */
+  --link-hover-color: #0056b3; /* Darker on hover */
+  --button-background-dark: #343a40; /* Dark button */
+  --button-background-light: #ffffff; /* Light button */
+  --button-border-color: #007bff; /* Button border color */
+  --button-hover-border-color: #0056b3; /* Button hover color */
+
+  font-family: var(--font-family);
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--text-color-dark);
+  background-color: var(--background-color-dark);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,54 +27,71 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  color: var(--link-color);
+  text-decoration: none; /* No underline for links */
+  transition: color 0.3s; /* Smooth transition */
 }
+
 a:hover {
-  color: #535bf2;
+  color: var(--link-hover-color);
 }
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column; /* Column layout */
+  align-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+  padding: 1rem; /* Padding for body */
+  background-color: var(--background-color-dark); /* Set background */
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 3.5em; /* Increased heading size */
+  line-height: 1.2;
+  margin-bottom: 1rem; /* Space below headings */
+  text-align: center; /* Center align headings */
+  color: var(--text-color-dark); /* Dark text color */
+  font-weight: 700; /* Bolder font for headings */
+  font-style: italic; /* Italicized text for headings */
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
+  border-radius: 12px; /* More rounded corners */
+  border: 2px solid transparent; /* Thicker border */
+  padding: 0.8em 1.5em; /* Increased padding */
+  font-size: 1.1em; /* Larger button text */
+  font-weight: 600; /* Bolder font */
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--button-background-dark);
+  color: white; /* White text for dark buttons */
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.3s, background-color 0.3s; /* Smooth transition */
 }
+
 button:hover {
-  border-color: #646cff;
+  border-color: var(--button-border-color);
+  background-color: var(--button-hover-border-color); /* Background change on hover */
 }
+
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 4px solid var(--button-border-color); /* Clear focus outline */
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: var(--text-color-light); /* Dark text for light mode */
+    background-color: var(--background-color-light); /* Light background */
   }
   a:hover {
-    color: #747bff;
+    color: #0056b3; /* Darker on hover for light mode */
   }
   button {
-    background-color: #f9f9f9;
+    background-color: var(--button-background-light); /* Light button background */
+    color: var(--text-color-light); /* Dark text for buttons */
+    border: 2px solid var(--button-border-color); /* Light mode button border */
   }
 }

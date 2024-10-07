@@ -3,19 +3,24 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #e7eff6; /* Light blue background for a soothing effect */
+  border-radius: 15px; /* More pronounced rounded corners */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Deeper shadow for a layered effect */
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  height: 7em; /* Slightly increased size for better visibility */
+  padding: 1.5em; /* More padding for a balanced look */
+  transition: transform 300ms, filter 300ms; /* Smooth transitions */
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 3em rgba(100, 108, 255, 0.7)); /* Softer shadow */
+  transform: scale(1.1) rotate(5deg); /* Increased rotation for a playful effect */
 }
+
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 3em rgba(97, 218, 251, 0.7));
 }
 
 @keyframes logo-spin {
@@ -34,9 +39,44 @@
 }
 
 .card {
-  padding: 2em;
+  padding: 2.5em; /* Increased padding for a more spacious feel */
+  background-color: #ffffff; /* Clean white background */
+  border-radius: 15px; /* Consistent rounded corners */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+  margin-bottom: 2.5rem; /* Increased space between cards */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+h1, h2 {
+  font-family: 'Inter', sans-serif; /* Modern font for headers */
+  color: #333; /* Dark text for contrast */
+  margin: 20px 0; /* Consistent margin for spacing */
+}
+
+h1 {
+  font-size: 3rem; /* Larger heading size */
+  text-transform: uppercase; /* Uppercase for emphasis */
+  letter-spacing: 2px; /* Increased letter spacing */
+}
+
+h2 {
+  font-size: 2.2rem; /* Slightly larger subheading size */
+  color: #555; /* Softer color for subheadings */
 }
 
 .read-the-docs {
-  color: #888;
+  color: #777; /* Slightly darker gray for links */
+  font-style: italic; /* Italicized text */
+  font-size: 1.2em; /* Slightly larger font size */
+  margin-top: 1.5rem; /* Increased space above the text */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.read-the-docs:hover {
+  color: #555; /* Darker color on hover for emphasis */
 }
