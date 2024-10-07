@@ -53,7 +53,7 @@
 }
 
 h1, h2 {
-  font-family: 'Inter', sans-serif; /* Modern font for headers */
+  font-family: 'Courier New', Courier, monospace; /* Modern font for headers */
   color: #333; /* Dark text for contrast */
   margin: 20px 0; /* Consistent margin for spacing */
 }

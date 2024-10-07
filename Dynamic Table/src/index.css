@@ -1,5 +1,5 @@
 :root {
-  --font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-family: 'Arial', sans-serif; /* Changed font family to Arial */
   --line-height: 1.5;
   --font-weight: 400;
 
@@ -54,8 +54,6 @@ h1 {
   margin-bottom: 1rem; /* Space below headings */
   text-align: center; /* Center align headings */
   color: var(--text-color-dark); /* Dark text color */
-  font-weight: 700; /* Bolder font for headings */
-  font-style: italic; /* Italicized text for headings */
 }
 
 button {

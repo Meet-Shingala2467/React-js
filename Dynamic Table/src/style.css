@@ -1,13 +1,13 @@
 body {
     background-color: #f7f9fc; /* Softer, light background color */
-    font-family: 'Inter', sans-serif; /* Use a clean sans-serif font for overall readability */
+    font-family: 'Arial', sans-serif; /* Changed font family to Arial for overall readability */
     margin: 0;
     padding: 20px; /* Add some padding to the body for spacing */
 }
 
 h1 {
     font-size: 3rem; /* Responsive font size */
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Arial', sans-serif; /* Changed font family to Arial for consistency */
     color: #333; /* Darker color for contrast */
     margin-bottom: 1.5rem; /* Space below the heading */
     text-align: center; /* Center align the heading */
@@ -15,7 +15,7 @@ h1 {
 
 th {
     font-size: 1.25rem; /* Increased font size for better readability */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Arial', sans-serif; /* Changed font family to Arial for consistency */
     color: #555; /* Softer color for table headers */
     padding: 10px; /* Add padding for better spacing */
     background-color: #e0e0e0; /* Light background for table headers */
