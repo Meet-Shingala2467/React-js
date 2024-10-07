@@ -1,0 +1,57 @@
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem; /* Increased padding for a spacious feel */
+  text-align: left;
+  background-color: #ffffff; /* Changed to a cleaner white background */
+  border-radius: 12px; /* Slightly larger border radius */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow for depth */
+}
+
+.logo {
+  height: 5em;
+  padding: 1em;
+  transition: transform 300ms, filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 1.5em rgba(100, 108, 255, 0.7)); /* Softer shadow color */
+  transform: scale(1.1);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 1.5em rgba(97, 218, 251, 0.7)); /* Softer shadow for React */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 15s linear;
+  }
+}
+
+.card {
+  padding: 2em; /* Increased padding for cards */
+  background-color: #f9f9f9; /* Light background for cards */
+  border-radius: 12px; /* Increased border radius for smoother corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  transition: box-shadow 300ms ease; /* Added transition for shadow */
+}
+
+.card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.read-the-docs {
+  color: #666; /* Darker gray for better readability */
+  font-style: italic;
+  font-size: 1.1em; /* Slightly larger font size */
+}
