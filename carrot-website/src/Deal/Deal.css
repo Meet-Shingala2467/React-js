@@ -1,0 +1,92 @@
+* {
+    outline: none;
+}
+
+:root {
+    --color: #64b496;
+    --poppins: "Poppins", sans-serif;
+    --manerope: "Manrope", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.deal {
+    background-image: url('img/bg-deal.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+}
+
+.deal .content {
+    padding: 24px;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.22);
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 3px 8px 5px rgba(0, 0, 0, 0.05);
+}
+
+.deal h5 span {
+    font-size: 26px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    line-height: 1.2;
+    color: var(--color);
+}
+
+.deal h5 {
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.deal h3 {
+    margin-top: 12px;
+    margin-bottom: 15px;
+    font-family: var(--manerope);
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #2b2b2d;
+}
+
+.deal p {
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-family: var(--poppins);
+    color: #7a7a7a;
+    line-height: 1.75;
+    margin-bottom: 20px;
+}
+
+.deal h4 {
+    padding: 12px 24px;
+    border: 1px solid #e9cbbe;
+    border-radius: 5px;
+}
+
+
+.deal .content h4 {
+    font-size: 19px;
+    padding: 12px 0px 12px 24px;
+    border: 1px solid #b18573;
+    border-radius: 5px;
+}
+.deal .content h4 p{
+    margin: 0;
+}

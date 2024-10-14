@@ -1,0 +1,205 @@
+* {
+    outline: none;
+}
+
+:root {
+    --color: #64b496;
+    --poppins: "Poppins", sans-serif;
+    --manerope: "Manrope", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.Organic {
+    padding: 70px 0;
+}
+
+.Organic1 {
+    padding-left: 120px;
+}
+
+.Organic .big-box {
+    background-image: url('img/products-rightview.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    border-radius: 5px;
+    padding: 100px 0;
+}
+
+.Organic .big-box h1 {
+    font-family: var(--manerope);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.Organic .big-box p {
+    font-size: 20px;
+    font-family: var(--manerope);
+    font-weight: 700;
+}
+
+.Organic .big-box span {
+    font-size: 12px;
+    padding-left: 10px;
+    font-family: var(--manerope);
+}
+
+.Organic .btn {
+    background-color: var(--color);
+    transition: all 1s;
+}
+
+.Organic .btn a {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: #fff;
+}
+
+.Organic .btn:hover {
+    background-color: black;
+}
+
+.Organic .box-1 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+}
+
+.Organic .img-box {
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.Organic .img-box img {
+    transition: transform 1s;
+}
+
+.Organic .img-box img:hover {
+    transform: scale(1.3);
+}
+
+.Organic .text-box {
+    text-align: center;
+}
+
+.Organic .text-box span{
+    font-size: 13px;
+    color: #000;
+    font-family: var(--poppins);
+}
+
+.Organic .text-box h3 {
+    font-size: 18px;
+    font-family: var(--poppins);
+    margin: 10px 0;
+    color: #000000;
+    transition: all 0.7s;
+}
+.Organic .text-box p {
+    font-size: 18px;
+    font-family: var(--poppins);
+    margin: 0;
+    font-weight: 800;
+    color: var(--color);
+}
+.Organic .text-box p span {
+    text-decoration: line-through;
+    color: #999;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.Organic .text-box i {
+    padding-top: 10px;
+    color: #f5885f;
+    font-size: 15px;
+}
+
+.Organic .text-box a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.Organic .text-box a h3:hover {
+    color: var(--color);
+}
+
+.Organic .icon1 a i {
+    background-color: #fff;
+}
+
+.Organic .icon1 a p i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d0d0d3;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+    color: #000000;
+    visibility: hidden;
+}
+
+.Organic .icon1 a i {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d0d0d3;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+    color: #000000;
+    visibility: hidden;
+}
+
+.Organic .box-1:hover i {
+    visibility: visible;
+}
+
+@media (max-width : 576px) {
+    .Organic1 {
+        padding-left: 90px;
+    }
+    .Organic {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width : 992px) {
+    .Organic1 {
+        padding-left: 70px;
+    }
+    .Organic {
+        padding: 50px 0;
+    }
+}

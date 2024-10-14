@@ -1,0 +1,256 @@
+* {
+    outline: none;
+}
+
+:root {
+    --color: #64b496;
+    --poppins: "Poppins", sans-serif;
+    --manerope: "Manrope", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.offer {
+    position: relative;
+    padding: 70px 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.offer ul li button {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.offer ul li button:hover {
+    color: var(--color);
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.offer ul li:first-child button {
+    color: var(--color);
+}
+
+.offer ul li:last-child button {
+    color: var(--color);
+}
+
+.offer ul li span {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #7a7a7a;
+    font-weight: 400;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.offer ul li span:hover {
+    color: var(--color);
+    transform: scale(1.1) translateY(-1px);
+}
+
+.offer img {
+    width: 100%;
+    height: 519px;
+    border-radius: 5px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.offer:hover img {
+    transform: scale(1.05) translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.offer .offers {
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.offer .offers:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.01) translateY(-1px);
+}
+
+.offer .offers h2 {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: white;
+    font-size: 54px;
+    width: 100px;
+    align-items: center;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.offer .offers h2:hover {
+    transform: scale(1.05) translateY(-2px);
+    color: #ccc;
+}
+
+.offer .offers h2 span {
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 10px 0 10px 5px;
+    font-family: var(--manerope);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.offer .offers h2 span:hover {
+    color: #ccc;
+    transform: scale(1.1) translateY(-1px);
+}
+
+.offer .shop {
+    display: flex;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.offer .shop:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.01) translateY(-1px);
+}
+
+.offer .shop button {
+    padding: 8px 22px;
+    background-color: var(--color);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.offer .shop button:hover {
+    background-color: black;
+    border: 1px solid white;
+    transform: scale(1.05) translateY(-2px);
+}
+
+.offer .shop button a {
+    font-size: 14px;
+    font-family: var(--manerope);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.offer .shop button a:hover {
+    color: #ccc;
+    transform: scale(1.1) translateY(-1px);
+}
+
+.offer .contant {
+    font-family: var(--manerope);
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 350px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.offer .contant:hover {
+    transform: scale(1.05) translateY(-2px);
+    color: #ccc;
+}
+
+.offer .contant h3 {
+    font-size: 22px;
+    font-weight: 700;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.offer .contant h3:hover {
+    color: #ccc;
+    transform: scale(1.1) translateY(-1px);
+}
+
+.offer .contant h3:active {
+    transform: scale(0.9);
+    color: #aaa;
+}
+
+.offer .contant h3:focus {
+    transform: scale(1.1);
+    color: #ccc;
+}
+
+.offer .contant h3:visited {
+    color: #aaa;
+}
+
+.offer .contant h3:link {
+    color: #ccc;
+}
+
+.offer .contant h3:hover:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: var(--color);
+}
+
+.offer .contant h3:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: var(--color);
+}
+
+@media (max-width:576px) {
+    .offer {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width:768px) {
+    .offer {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width:992px) {
+    .offer {
+        padding: 50px 0;
+    }
+}

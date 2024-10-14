@@ -1,0 +1,169 @@
+* {
+    outline: none;
+}
+
+:root {
+    --color: #64b496;
+    --poppins: "Poppins", sans-serif;
+    --manerope: "Manrope", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+
+.footerCopyright {
+    border-top: 1px solid #e9e9e9;
+    background-color: #f7f7f8;
+}
+
+.footer {
+    padding: 70px 0;
+}
+
+.footer .logo img {
+    padding-bottom: 15px;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-bottom: 0px;
+    font-family: "Poppins", sans-serif;
+    color: #7a7a7a;
+    line-height: 1.75;
+}
+
+.footer ul {
+    margin-top: 24px;
+    padding-left: 0px;
+}
+
+.footer ul li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    line-height: 26px;
+    color: #777;
+    list-style: none;
+    position: relative;
+}
+
+.footer ul li a {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #777;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.footer ul li a:hover {
+    color: #64b496;
+}
+
+.footer ul li i {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #64b496;
+    margin-right: 5px;
+}
+
+.footer h4 {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    line-height: 1.3;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.footer .social-media {
+    margin: 22px -2px;
+}
+
+.footer .social-media span a {
+    margin: 2px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000;
+    padding: 6px;
+    background-color: #fff;
+    border: 1px solid #e1dfdf;
+    line-height: 35px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.footer .social-media span a:hover {
+    color: #64b496;
+}
+
+.footer .social-media a i {
+    padding-right: 0;
+}
+
+.footer .images a img {
+    width: 73px;
+    height: 73px;
+}
+
+.copyright {
+    padding: 20px 0 5px;
+    border-top: 1px solid #e9e9e9;
+    text-align: center;
+}
+
+.copyright p,
+.copyright span {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    line-height: 1.2;
+}
+
+.copyright p a {
+    color: #64b496;
+    text-decoration: none;
+}
+
+form {
+    position: relative;
+}
+
+form i {
+    position: absolute;
+    right: 20px;
+    top: 13px;
+
+}
+
+@media (max-width : 576px) {
+    .footer {
+        padding: 50px 0;
+    }
+}
+@media (max-width : 768px) {
+    .footer {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width : 992px) {
+    .footer {
+        padding: 50px 0;
+    }
+}
