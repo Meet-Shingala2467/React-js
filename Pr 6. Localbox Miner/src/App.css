@@ -1,0 +1,54 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+ /* Changed to a neutral background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added a subtle shadow for depth */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  border-radius: 20px; /* Added rounded corners for a modern look */
+  background-color: #3498db; /* Changed to a calming blue color */
+  color: #fff; /* Changed text color to white for better contrast */
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #2ecc71aa); /* Changed to a greenish-blue color for hover effect */
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #9b59b6aa); /* Changed to a purple color for hover effect */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background-color: #fff; /* Changed to a clean white background */
+  border-radius: 10px; /* Added rounded corners for a modern look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added a subtle shadow for depth */
+  margin-bottom: 20px; /* Added margin for better spacing */
+  border: 1px solid #ddd; /* Added a light gray border for better definition */
+}
+
+.read-the-docs {
+  color: #666; /* Changed to a dark gray color for better readability */
+  font-size: 16px; /* Adjusted font size for better readability */
+  font-weight: 500; /* Adjusted font weight for better readability */
+}
