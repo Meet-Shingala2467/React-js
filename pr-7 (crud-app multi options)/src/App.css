@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2f2c2b;
+  color: #e0d5d2;
+}
+
+button {
+  background-color: #8e806a;
+  color: #000;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 0 0.3rem;
+}
+
+button:disabled {
+  background-color: #6d6a68;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #330060;
+}
+
+div > button {
+  margin: 0.5rem;
+}
+
+div > button:nth-child(1) {
+  background-color: #ff4d4d;
+}
+
+div > button:nth-child(1):hover:not(:disabled) {
+  background-color: #ff6666;
+}
+
+div > button:nth-child(2) {
+  background-color: #006400;
+}
+
+div > button:nth-child(2):hover:not(:disabled) {
+  background-color: #008000;
+}
+
+form {
+  margin: 1.5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input[type="text"] {
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  border: 1px solid #8e806a;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 320px;
+  background-color: #403a38;
+  color: #e0d5d2;
+  font-size: 1rem;
+}
+
+form button[type="submit"] {
+  background-color: #68b5ae;
+  color: #ffffff;
+}
+
+table {
+  width: 85%;
+  margin: 1.5rem auto;
+  border-collapse: collapse;
+  background-color: #eacbcb;
+}
+
+th, td {
+  padding: 1rem;
+  border: 1px solid #5c5653;
+  text-align: center;
+  color: #000;
+  font-size: 0.9rem;
+}
+
+th {
+  background-color: #17ac00fa;
+  color: #f5f1ec;
+}
+
+td button {
+  background-color: #660ab7;
+  color: #ffffff;
+  font-size: 0.85rem;
+}
+
+td button:hover {
+  background-color: #ffec8b;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(47, 44, 43, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #403a38;
+  color: #e0d5d2;
+  padding: 2rem;
+  border-radius: 8px;
+  position: relative;
+  max-width: 600px;
+  width: 90%;
+  font-size: 1rem;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.modal-content table {
+  width: 100%;
+}
+
+.modal-content button {
+  position: absolute;
+  top: 1rem;
+  padding: 0.5rem;
+}
+
+.modal-content .close-btn {
+  right: 1rem;
+}
+
+.modal-content .clear-btn {
+  left: 1rem;
+}
