@@ -1,0 +1,210 @@
+/* View.css */
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* View Container */
+.view-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.header .btn-primary {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header .btn-primary:hover {
+  background-color: #45a049;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.search-bar,
+.filter-dropdown {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.search-bar:focus,
+.filter-dropdown:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Table */
+.record-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.record-table th,
+.record-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.record-table th {
+  background-color: #f1f1f1;
+  font-size: 16px;
+}
+
+.record-table td {
+  font-size: 14px;
+}
+
+.record-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.record-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Status Button */
+.status-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.status-btn.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.status-btn.inactive {
+  background-color: #f44336;
+  color: white;
+}
+
+.status-btn:hover {
+  opacity: 0.8;
+}
+
+/* Action Buttons */
+.action-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.edit-btn {
+  background-color: #f39c12;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #e67e22;
+}
+
+/* No Records Message */
+.no-records {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-bar,
+  .filter-dropdown {
+    max-width: 100%;
+  }
+
+  .record-table th,
+  .record-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .record-table {
+    font-size: 12px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header .btn-primary {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .record-table th,
+  .record-table td {
+    font-size: 10px;
+    padding: 6px;
+  }
+
+  .record-table {
+    font-size: 10px;
+  }
+}
