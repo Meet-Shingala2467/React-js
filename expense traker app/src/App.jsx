@@ -117,6 +117,7 @@ const BudgetTracker = () => {
                 placeholder="Enter Total Budget"
                 className="input"
                 style={{ padding: '10px', borderRadius: '5px', border: '1px solid #4a90e2', width: '100%' }}
+                min="0"
               />
               <button type="submit" className="button" style={{ marginTop: '10px', padding: '10px', borderRadius: '5px', backgroundColor: '#4a90e2', color: '#fff', border: 'none', cursor: 'pointer' }}>
                 Set Budget
@@ -146,6 +147,7 @@ const BudgetTracker = () => {
                 placeholder="Expense Title"
                 className="input"
                 style={{ padding: '10px', borderRadius: '5px', border: '1px solid #4a90e2', width: '100%' }}
+                required
               />
               <input
                 type="number"
@@ -156,6 +158,9 @@ const BudgetTracker = () => {
                 placeholder="Amount"
                 className="input"
                 style={{ padding: '10px', borderRadius: '5px', border: '1px solid #4a90e2', width: '100%', marginTop: '10px' }}
+                min="0.01"
+                step="0.01"
+                required
               />
               <button type="submit" className="button" style={{ marginTop: '10px', padding: '10px', borderRadius: '5px', backgroundColor: '#28a745', color: '#fff', border: 'none', cursor: 'pointer' }}>
                 Add Expense
