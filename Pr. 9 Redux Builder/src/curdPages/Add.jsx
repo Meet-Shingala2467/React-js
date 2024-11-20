@@ -65,11 +65,11 @@ function Add() {
           align-items: center;
           padding: 32px;
           height: 100vh;
-          background: #f4f7fa;
+          background: #e0f7fa; /* Changed background color */
         }
 
         .add-form {
-          background: black;
+          background: white;
           width: 100%;
           max-width: 400px;
           padding: 24px;
@@ -81,7 +81,7 @@ function Add() {
         h2 {
           margin-bottom: 16px;
           font-size: 24px;
-          color: #fff;
+          color: #333;
         }
 
         .input-field {
