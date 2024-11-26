@@ -1,0 +1,72 @@
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #f0f0f5;
+  font-family: 'Arial', sans-serif;
+}
+
+.contact-page h1 {
+  font-size: 3em;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.contact-page form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page label {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.contact-page input[type="text"],
+.contact-page input[type="tel"],
+.contact-page textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+.contact-page input[type="text"]:focus,
+.contact-page input[type="tel"]:focus,
+.contact-page textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.contact-page button {
+  padding: 15px 25px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-page button:hover {
+  background-color: #0056b3;
+}
+
+.contact-page button:active {
+  background-color: #004494;
+}
+
