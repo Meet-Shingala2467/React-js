@@ -2,71 +2,76 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
-  background-color: #f0f0f5;
-  font-family: 'Arial', sans-serif;
+  padding: 50px;
+  background-color: #e8f5e9;
+  font-family: 'Roboto', sans-serif;
 }
 
 .contact-page h1 {
-  font-size: 3em;
-  margin-bottom: 30px;
-  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #2e7d32;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .contact-page form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 600px;
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .contact-page label {
-  margin-bottom: 15px;
-  font-size: 1.2em;
-  color: #555;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #4e342e;
 }
 
 .contact-page input[type="text"],
 .contact-page input[type="tel"],
+.contact-page input[type="email"],
 .contact-page textarea {
   width: 100%;
-  padding: 12px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
   font-size: 1em;
-  transition: border-color 0.3s;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .contact-page input[type="text"]:focus,
 .contact-page input[type="tel"]:focus,
+.contact-page input[type="email"]:focus,
 .contact-page textarea:focus {
-  border-color: #007bff;
+  border-color: #66bb6a;
+  box-shadow: 0 0 5px rgba(102, 187, 106, 0.5);
   outline: none;
 }
 
 .contact-page button {
-  padding: 15px 25px;
-  font-size: 1.2em;
-  color: #fff;
-  background-color: #007bff;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  color: #ffffff;
+  background-color: #388e3c;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .contact-page button:hover {
-  background-color: #0056b3;
+  background-color: #2e7d32;
+  transform: translateY(-2px);
 }
 
 .contact-page button:active {
-  background-color: #004494;
+  background-color: #1b5e20;
+  transform: translateY(0);
 }
-
