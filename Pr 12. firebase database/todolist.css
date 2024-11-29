@@ -1,0 +1,137 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background: #ffffff;
+    padding: 25px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    text-align: center;
+    animation: fadeIn 0.8s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  h1 {
+    font-size: 26px;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 110px);
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #66a6ff;
+    box-shadow: 0 0 5px rgba(102, 166, 255, 0.5);
+  }
+  
+  button {
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .add-btn {
+    background-color: #66a6ff;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 10px;
+  }
+  
+  .add-btn:hover {
+    background-color: #4f88db;
+  }
+  
+  .clear-btn {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+  
+  .clear-btn:hover {
+    background-color: #e55a5a;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  li:hover {
+    transform: scale(1.02);
+  }
+  
+  .todo-text {
+    font-size: 16px;
+    color: #4a4a4a;
+    flex: 1;
+  }
+  
+  .todo-actions button {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-left: 8px;
+    color: #fff;
+  }
+  
+  .update-btn {
+    background-color: #4caf50;
+  }
+  
+  .update-btn:hover {
+    background-color: #3c8d41;
+  }
+  
+  .delete-btn {
+    background-color: #f44336;
+  }
+  
+  .delete-btn:hover {
+    background-color: #d32f2f;
+  }
+  

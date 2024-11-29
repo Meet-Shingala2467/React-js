@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import { getFirestore, collection, addDoc, getDocs, deleteDoc, doc } from "firebase/firestore";
+import { getFirestore, collection, addDoc, getDocs, deleteDoc, doc, updateDoc, writeBatch } from "firebase/firestore";
 import { app } from './firebase';
+import './todolist.css';
 
 const db = getFirestore(app);
 
@@ -41,6 +42,31 @@ function TodoList() {
     }
   };
 
+  const updateTodo = async (id, newText) => {
+    if (newText.trim() === "") return;
+    try {
+      const todoDoc = doc(db, "todos", id);
+      await updateDoc(todoDoc, { text: newText });
+      fetchTodos();
+    } catch (error) {
+      console.error("Error updating todo:", error);
+    }
+  };
+
+  const clearTodos = async () => {
+    try {
+      const querySnapshot = await getDocs(collection(db, "todos"));
+      const batch = writeBatch(db);
+      querySnapshot.forEach((doc) => {
+        batch.delete(doc.ref);
+      });
+      await batch.commit();
+      setTodos([]);
+    } catch (error) {
+      console.error("Error clearing todos:", error);
+    }
+  };
+
   useEffect(() => {
     fetchTodos();
   }, []);
@@ -60,9 +86,11 @@ function TodoList() {
           <li key={todo.id}>
             {todo.text}
             <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+            <button onClick={() => updateTodo(todo.id, prompt("Update todo:", todo.text))}>Update</button>
           </li>
         ))}
       </ul>
+      <button onClick={clearTodos}>Clear List</button>
     </div>
   );
 }
