@@ -79,6 +79,7 @@ function TodoList() {
         value={newTodo}
         onChange={(e) => setNewTodo(e.target.value)}
         placeholder="Add a new todo"
+        style={{ color: 'blue' }} // Change input text color to blue
       />
       <button onClick={addTodo}>Add</button>
       <ul>
