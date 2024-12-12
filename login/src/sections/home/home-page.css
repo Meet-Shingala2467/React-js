@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #ffffff;
+  }
+  
+  .home-page {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .home-page h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f1f1f1;
+  }
+  
+  .home-page div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .home-page input[type="text"],
+  .home-page input[type="date"],
+  .home-page select {
+    padding: 10px;
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid #888;
+    border-radius: 6px;
+    background-color: #333;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .home-page input:focus,
+  .home-page select:focus {
+    border-color: #6a11cb;
+    outline: none;
+  }
+  
+  .home-page button {
+    padding: 12px 16px;
+    background-color: #6a11cb;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .home-page button:hover {
+    background-color: #4a0da4;
+    transform: scale(1.05);
+  }
+  
+  .home-page ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .home-page li {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-page li:hover {
+    background-color: #555;
+  }
+  
+  .home-page li strong {
+    color: #e0e0e0;
+  }
+  
+  .home-page li div button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    background-color: #e74c3c;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .home-page li div button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+  }
+  

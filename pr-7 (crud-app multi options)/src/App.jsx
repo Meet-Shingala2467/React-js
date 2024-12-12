@@ -83,6 +83,7 @@ function App() {
             onChange={(e) => setTitle(e.target.value)}
             className="input-field"
           />
+         
           <input
             type="text"
             placeholder="Description"
@@ -90,6 +91,7 @@ function App() {
             onChange={(e) => setDescription(e.target.value)}
             className="input-field"
           />
+          
           <div className="button-group">
             <button type="submit" className="submit-btn" disabled={!isFormValid}>
               {editMode ? 'Update' : 'Submit'}
