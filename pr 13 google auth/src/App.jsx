@@ -11,10 +11,10 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundColor: '#282c34', color: '#ffffff', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
       <h1>Google Authentication</h1>
       {user ? (
-        <div className="card">
+        <div className="card" style={{ backgroundColor: '#3a3f47', padding: '2em', borderRadius: '8px' }}>
           <h2>Welcome, {user.name}!</h2>
           <img src={user.imageUrl} alt={user.name} className="logo" />
           <p>Email: {user.email}</p>
